@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บุคลากร - กลุ่มสาระการเรียนรู้วิทยาศาสตร์ โรงเรียนสามร้อยยอดวิทยาคม</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f0f9ff;
+        }
+        .staff-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+        .staff-card {
+            transition: all 0.3s ease;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        .avatar {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="bg-white rounded-full p-2 mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">กลุ่มสาระการเรียนรู้วิทยาศาสตร์</h1>
+                        <p class="text-blue-100">โรงเรียนสามร้อยยอดวิทยาคม</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="px-3 py-2 rounded hover:bg-blue-700 transition">หน้าหลัก</a></li>
+                        <li><a href="#" class="px-3 py-2 rounded bg-white text-blue-700 font-medium">บุคลากร</a></li>
+                        <li><a href="#" class="px-3 py-2 rounded hover:bg-blue-700 transition">หลักสูตร</a></li>
+                        <li><a href="#" class="px-3 py-2 rounded hover:bg-blue-700 transition">กิจกรรม</a></li>
+                        <li><a href="#" class="px-3 py-2 rounded hover:bg-blue-700 transition">ติดต่อ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">บุคลากรกลุ่มสาระการเรียนรู้วิทยาศาสตร์</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">คณะครูผู้สอนที่มีความเชี่ยวชาญและประสบการณ์ในการจัดการเรียนการสอนวิชาวิทยาศาสตร์</p>
+        </div>
+
+        <!-- Department Head -->
+        <div class="mb-16">
+            <div class="text-center mb-8">
+                <h3 class="text-xl font-semibold text-blue-800 inline-block border-b-2 border-blue-400 pb-1">หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+            </div>
+            <div class="flex justify-center">
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden w-full max-w-md">
+                    <div class="p-8 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-32 h-32 rounded-full mb-6 text-5xl font-bold">
+                            <span>อ.ส</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">อาจารย์สมชาย วิทยาศาสตร์</h4>
+                        <p class="text-blue-600 font-medium mb-3">หัวหน้ากลุ่มสาระการเรียนรู้วิทยาศาสตร์</p>
+                        <p class="text-gray-600 mb-4">วท.บ. ฟิสิกส์, ศษ.ม. การสอนวิทยาศาสตร์</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7l-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staff Members -->
+        <div>
+            <div class="text-center mb-8">
+                <h3 class="text-xl font-semibold text-blue-800 inline-block border-b-2 border-blue-400 pb-1">คณะครูผู้สอน</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Teacher 1 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>อ.ป</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">อาจารย์ปรียา ดาวเด่น</h4>
+                        <p class="text-blue-600 font-medium mb-2">ครูชำนาญการพิเศษ</p>
+                        <p class="text-gray-500 text-sm mb-3">สอนวิชาเคมี ม.4-6</p>
+                        <p class="text-gray-600 text-sm">วท.บ. เคมี, ศษ.ม. หลักสูตรและการสอน</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>อ.ว</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">อาจารย์วิทยา จันทร์เพ็ญ</h4>
+                        <p class="text-blue-600 font-medium mb-2">ครูชำนาญการ</p>
+                        <p class="text-gray-500 text-sm mb-3">สอนวิชาฟิสิกส์ ม.4-6</p>
+                        <p class="text-gray-600 text-sm">วท.บ. ฟิสิกส์, วท.ม. ฟิสิกส์ศึกษา</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>อ.น</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">อาจารย์นภา พฤกษาสวย</h4>
+                        <p class="text-blue-600 font-medium mb-2">ครูชำนาญการ</p>
+                        <p class="text-gray-500 text-sm mb-3">สอนวิชาชีววิทยา ม.4-6</p>
+                        <p class="text-gray-600 text-sm">วท.บ. ชีววิทยา, ศษ.ม. การสอนวิทยาศาสตร์</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>อ.ธ</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">อาจารย์ธนกร วิทยาทันสมัย</h4>
+                        <p class="text-blue-600 font-medium mb-2">ครู</p>
+                        <p class="text-gray-500 text-sm mb-3">สอนวิชาวิทยาศาสตร์ ม.1-3</p>
+                        <p class="text-gray-600 text-sm">กศ.บ. วิทยาศาสตร์ทั่วไป</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 5 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>อ.ม</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">อาจารย์มณีรัตน์ ดาวเด่น</h4>
+                        <p class="text-blue-600 font-medium mb-2">ครู</p>
+                        <p class="text-gray-500 text-sm mb-3">สอนวิชาวิทยาศาสตร์ ม.1-3</p>
+                        <p class="text-gray-600 text-sm">ค.บ. วิทยาศาสตร์</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 6 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>อ.พ</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">อาจารย์พิชญา นักวิจัย</h4>
+                        <p class="text-blue-600 font-medium mb-2">ครูผู้ช่วย</p>
+                        <p class="text-gray-500 text-sm mb-3">สอนวิชาโลกและดาราศาสตร์ ม.4-6</p>
+                        <p class="text-gray-600 text-sm">วท.บ. ดาราศาสตร์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab Staff -->
+        <div class="mt-16">
+            <div class="text-center mb-8">
+                <h3 class="text-xl font-semibold text-blue-800 inline-block border-b-2 border-blue-400 pb-1">เจ้าหน้าที่ห้องปฏิบัติการ</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Lab Staff 1 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>น.ส</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">นางสาวสุดา ใจดี</h4>
+                        <p class="text-blue-600 font-medium mb-2">เจ้าหน้าที่ห้องปฏิบัติการเคมี</p>
+                        <p class="text-gray-600 text-sm">วท.บ. เคมี</p>
+                    </div>
+                </div>
+
+                <!-- Lab Staff 2 -->
+                <div class="staff-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 text-center">
+                        <div class="avatar inline-flex items-center justify-center w-24 h-24 rounded-full mb-4 text-3xl font-bold">
+                            <span>น.ช</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">นายชาติชาย มั่นคง</h4>
+                        <p class="text-blue-600 font-medium mb-2">เจ้าหน้าที่ห้องปฏิบัติการฟิสิกส์</p>
+                        <p class="text-gray-600 text-sm">วท.บ. ฟิสิกส์ประยุกต์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white mt-16">
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">โรงเรียนสามร้อยยอดวิทยาคม</h4>
+                    <p class="mb-2">เลขที่ 123 หมู่ 4 ตำบลสามร้อยยอด</p>
+                    <p class="mb-2">อำเภอสามร้อยยอด จังหวัดประจวบคีรีขันธ์ 77120</p>
+                    <p>โทรศัพท์: 032-688-XXX</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">เมนูลัด</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300 transition">หน้าหลัก</a></li>
+                        <li><a href="#" class="hover:text-blue-300 transition">เกี่ยวกับเรา</a></li>
+                        <li><a href="#" class="hover:text-blue-300 transition">หลักสูตร</a></li>
+                        <li><a href="#" class="hover:text-blue-300 transition">กิจกรรม</a></li>
+                        <li><a href="#" class="hover:text-blue-300 transition">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">ติดตามเรา</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-white text-blue-800 rounded-full p-2 hover:bg-blue-100 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-white text-blue-800 rounded-full p-2 hover:bg-blue-100 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-white text-blue-800 rounded-full p-2 hover:bg-blue-100 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-white text-blue-800 rounded-full p-2 hover:bg-blue-100 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-blue-200">ติดตามข่าวสารและกิจกรรมต่างๆ ของโรงเรียนได้ที่ช่องทางโซเชียลมีเดียของเรา</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300 text-sm">
+                <p>&copy; 2023 โรงเรียนสามร้อยยอดวิทยาคม. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality could be added here
+    </script>
+</body>
+</html>
